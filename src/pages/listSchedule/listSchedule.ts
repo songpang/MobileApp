@@ -119,6 +119,10 @@ export class ListSchedulePage {
     this.nav.push(FormSchedulePage);
   }
 
+  add() {
+    this.nav.push(FormSchedulePage);
+  }
+
   formatDateTime(dateString) {
     if (this.userTimezone !== undefined && this.userTimezone !=="") {
       return moment(dateString).tz(this.userTimezone).format('dddd, MMMM DD');

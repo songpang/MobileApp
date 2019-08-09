@@ -19,6 +19,7 @@
     "@angular/core": "^5.2.9",
     "@angular/forms": "^5.2.9",
     "@angular/http": "^5.2.9",
+    "@angular/material": "^8.1.2",
     "@angular/platform-browser": "^5.2.9",
     "@angular/platform-browser-dynamic": "^5.2.9",
     "@angular/tsc-wrapped": "^4.4.6",

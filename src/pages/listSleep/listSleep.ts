@@ -6,6 +6,7 @@ import { ListSleepModel } from './listSleep.model';
 import { ListSleepService } from './listSleep.service';
 import { RestService } from '../../app/services/restService.service';
 import { FormSleepPage } from '../../pages/formSleep/formSleep';
+import { Tab2Page } from '../tab2/tab2';
 
 var moment = require('moment-timezone');
 
@@ -123,6 +124,10 @@ export class ListSleepPage {
 
   addNew() {
     this.nav.push(FormSleepPage);
+  }
+
+  add(){
+    this.nav.push(Tab2Page);
   }
 
   formatDateTime(dateString) {

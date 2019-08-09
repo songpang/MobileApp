@@ -185,10 +185,14 @@ import { GoogleLoginService } from '../pages/google-login/google-login.service';
 import { GoogleMapsService } from '../pages/maps/maps.service';
 
 import { TextMaskModule } from 'angular2-text-mask';
+import { Tab2Page } from '../pages/tab2/tab2';
+import { JsonLoadFinder } from '../pages/tab2/JsonLoadFinder';
+
 
 @NgModule({
   declarations: [
     MyApp,
+    Tab2Page,
     ListingPage,
     HistoryPage,
     SettingsTabPage,
@@ -312,6 +316,7 @@ import { TextMaskModule } from 'angular2-text-mask';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    Tab2Page,
     ListingPage,
     HistoryPage,
     SettingsTabPage,
@@ -416,6 +421,7 @@ import { TextMaskModule } from 'angular2-text-mask';
   ],
   providers: [
     FeedService,
+    JsonLoadFinder,
     ListingService,
     HistoryService,
     SettingsService,
