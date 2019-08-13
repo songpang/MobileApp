@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { NavController, LoadingController, Platform, ModalController, Events } from 'ionic-angular';
 import { FeedPage } from '../feed/feed';
 import 'rxjs/Rx';
+import { ListNewPage } from '../list-new/list-new';
 import { ListingModel } from './listing.model';
 import { ListingService } from './listing.service';
 import { RestService } from '../../app/services/restService.service';
@@ -427,6 +428,8 @@ export class ListingPage {
       this.nav.push(ListVisitPage, { category: category });
     } else if (category.title == 'Medicine' || category.title == 'Current Medicine' || category.title == 'Medicine Cabinet') {
       this.nav.push(ListMedicationPage, { category: category });
+    } else if (category.title == 'New') {
+      this.nav.push(ListNewPage, { category: category });
     } else {
       console.log('Invalid category from listing.gotoFeed: ', category);
       if (this.blnShowFeed) {

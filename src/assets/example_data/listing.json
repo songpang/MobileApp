@@ -1,61 +1,64 @@
 {
-    "banner_image": "./assets/images/listing/600x300banner1.png",
-    "banner_title": "",
-    "populars": [
-        {
-            "title": "Mandy",
-            "image": "./assets/images/listing/Family/300x300Mandy.jpg"
-        },
-        {
-            "title": "Sophie",
-            "image": "./assets/images/listing/Family/300x300Sophie.jpeg"
-        },
-        {
-            "title": "Ella",
-            "image": "./assets/images/listing/Family/300x300Ella.jpg"
-        },
-        {
-            "title": "Mirian",
-            "image": "./assets/images/listing/Family/300x300Mir.jpg"
-        },
-        {
-            "title": "Marty",
-            "image": "./assets/images/listing/Family/300x300AddImageWithText.jpg"
-        }
-    ],
-    "categories": [
-        {
-            "title": "Order a Meal",
-            "image": "./assets/images/listing/200x200order2.jpg"
-        },
-        {
-            "title": "Achieve",
-            "image": "./assets/images/listing/200x200weight.jpg"
-        },
-        {
-            "title": "Nutrition",
-            "image": "./assets/images/listing/200x200nutrition.jpg"
-        },
-        {
-            "title": "Fitness",
-            "image": "./assets/images/listing/200x200invest.jpg"
-        },
-        {
-            "title": "Sleep",
-            "image": "./assets/images/listing/200x200Sleep.jpg"
-        },
-        {
-            "title": "Measure",
-            "image": "./assets/images/listing/200x200weight2.jpg"
-        },
-        {
-            "title": "Medicine",
-            "image": "./assets/images/listing/200x200medication.jpg"
-        },
-        {
-            "title": "Visit",
-            "image": "./assets/images/listing/200x200drphil.jpg"
-        }
-
-    ]
+  "banner_image": "./assets/images/listing/600x300banner1.png",
+  "banner_title": "",
+  "populars": [
+    {
+      "title": "Mandy",
+      "image": "./assets/images/listing/Family/300x300Mandy.jpg"
+    },
+    {
+      "title": "Sophie",
+      "image": "./assets/images/listing/Family/300x300Sophie.jpeg"
+    },
+    {
+      "title": "Ella",
+      "image": "./assets/images/listing/Family/300x300Ella.jpg"
+    },
+    {
+      "title": "Mirian",
+      "image": "./assets/images/listing/Family/300x300Mir.jpg"
+    },
+    {
+      "title": "Marty",
+      "image": "./assets/images/listing/Family/300x300AddImageWithText.jpg"
+    }
+  ],
+  "categories": [
+    {
+      "title": "Order a Meal",
+      "image": "./assets/images/listing/200x200order2.jpg"
+    },
+    {
+      "title": "Achieve",
+      "image": "./assets/images/listing/200x200weight.jpg"
+    },
+    {
+      "title": "Nutrition",
+      "image": "./assets/images/listing/200x200nutrition.jpg"
+    },
+    {
+      "title": "Fitness",
+      "image": "./assets/images/listing/200x200invest.jpg"
+    },
+    {
+      "title": "Sleep",
+      "image": "./assets/images/listing/200x200Sleep.jpg"
+    },
+    {
+      "title": "Measure",
+      "image": "./assets/images/listing/200x200weight2.jpg"
+    },
+    {
+      "title": "Medicine",
+      "image": "./assets/images/listing/200x200medication.jpg"
+    },
+    {
+      "title": "Visit",
+      "image": "./assets/images/listing/200x200drphil.jpg"
+    },
+    {
+      "title": "New",
+      "image": "./assets/images/listing/200x200weight2.jpg"
+    }
+  ]
 }

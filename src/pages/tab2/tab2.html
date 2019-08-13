@@ -1,15 +1,12 @@
 <ion-header>
     <ion-navbar>
   <ion-toolbar>
-    <ion-title> Tab Two {{ test }} </ion-title>
+    <ion-title> Tab Two </ion-title>
   </ion-toolbar>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-button hape="round" expand="full">
-    <ion-icon name="star"></ion-icon>
-  </ion-button>
   <div>
     <ion-card>
       <ion-item>
@@ -27,24 +24,15 @@
 
       <ion-card-content>
         <canvas #lineCanvas></canvas>
-        <ion-button (click)="changeData()">
-          another data
-        </ion-button>
-        
-        <ion-button >
-          6 Month
-        </ion-button>
-        <ion-button (click) = "viewpastData()">
-          func test Btn
-        </ion-button>
-
-        <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-          <mat-button-toggle value="six" (change)= "viewpastData2(6)">6 Month</mat-button-toggle>
-          <mat-button-toggle value="nine" (change)= "viewpastData2(9)">9 Month</mat-button-toggle>
-          <mat-button-toggle value="twelve" (change)= "viewpastData2(12)">1 YEAR</mat-button-toggle>
-          <mat-button-toggle value="2year" (change)= "viewpastData2(24)"> 2 YEAR</mat-button-toggle>
-        </mat-button-toggle-group>
-
+          <button ion-button (click)="viewpastData()">
+            {{ selectedData }} Month
+          </button>
+          <button ion-button class = "opntionBtn" (click)="presentPopover($event)">
+            :
+          </button>
+          <button ion-button (click) = "changeData()">
+            anotherData
+          </button>
       </ion-card-content>
 
       <ion-card-content class="cardBadge">
@@ -80,50 +68,6 @@
         </div>
       </ion-card-content>
 
-      <mat-card class="example-card">
-        <div align="center">
-          <img
-            mat-card-image
-            src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-            alt="Photo of a Shiba Inu"
-          />
-        </div>
-        <mat-card-content>
-          <p>
-            The Shiba Inu is the smallest of the six original and distinct spitz
-            breeds of dog from Japan. A small, agile dog that copes very well
-            with mountainous terrain, the Shiba Inu was originally bred for
-            hunting.
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>LIKE</button>
-          <button mat-button>SHARE</button>
-        </mat-card-actions>
-      </mat-card>
-
-      <mat-list>
-        <h3 mat-subheader>Folders</h3>
-        <mat-list-item *ngFor="let comment of comments">
-          <mat-icon mat-list-icon>folder</mat-icon>
-          <!-- <h4 mat-line>{{ comment.description }}</h4> -->
-          <p mat-line>{{ comment.description}}</p>
-        </mat-list-item>
-        <mat-divider></mat-divider>
-        <h3 mat-subheader>Notes</h3>
-        <mat-list-item *ngFor="let note of notes">
-          <mat-icon mat-list-icon>note</mat-icon>
-          <h4 mat-line>{{ note.name }}</h4>
-          <p mat-line>{{ note.updated | date }}</p>
-        </mat-list-item>
-      </mat-list>
-
-      <mat-form-field hideRequiredMarker appearance="outline" class="mat-form">
-        <mat-label>Comments</mat-label>
-        <input matInput #inputComments/>
-        <mat-hint>Input Your Comments</mat-hint>
-      </mat-form-field>
-      <button mat-button (click)="addDescription(inputComments.value)">Action</button>
     </ion-card>
   </div>
 </ion-content>

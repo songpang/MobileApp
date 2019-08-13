@@ -11,6 +11,12 @@ import { File } from '@ionic-native/file';
 import { FileTransfer, FileTransferObject } from '@ionic-native/file-transfer';
 import { HTTP } from '@ionic-native/http';
 
+import { ListNewPage } from '../pages/list-new/list-new';
+import { ReviewEPage } from '../pages/review-e/review-e';
+import { ReviewDPage } from '../pages/review-d/review-d';
+import { ReviewCPage } from '../pages/review-c/review-c';
+import { ReviewBPage } from '../pages/review-b/review-b';
+
 import { ListingPage } from '../pages/listing/listing';
 import { HistoryPage } from '../pages/history/history';
 import { SettingsTabPage } from '../pages/settingstab/settingstab';
@@ -188,11 +194,18 @@ import { TextMaskModule } from 'angular2-text-mask';
 import { Tab2Page } from '../pages/tab2/tab2';
 import { JsonLoadFinder } from '../pages/tab2/JsonLoadFinder';
 
+import { PopoverComponent } from '../components/popover/popover';
 
 @NgModule({
   declarations: [
     MyApp,
     Tab2Page,
+    ListNewPage,
+    ReviewEPage,
+    ReviewDPage,
+    ReviewCPage,
+    ReviewBPage,
+
     ListingPage,
     HistoryPage,
     SettingsTabPage,
@@ -302,7 +315,9 @@ import { JsonLoadFinder } from '../pages/tab2/JsonLoadFinder';
     CounterInput,
     Rating,
     Autosize,
-    GoogleMap
+    GoogleMap,
+
+    PopoverComponent
   ],
   imports: [
     BrowserModule,
@@ -311,12 +326,19 @@ import { JsonLoadFinder } from '../pages/tab2/JsonLoadFinder';
     TextMaskModule,
     IonicModule.forRoot(MyApp, {
       navExitApp: false
-    })
+    }),
+    
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     Tab2Page,
+    ListNewPage,
+    ReviewEPage,
+    ReviewDPage,
+    ReviewCPage,
+    ReviewBPage,
+
     ListingPage,
     HistoryPage,
     SettingsTabPage,
@@ -417,7 +439,9 @@ import { JsonLoadFinder } from '../pages/tab2/JsonLoadFinder';
     FunctionalitiesPage,
     FacebookLoginPage,
     GoogleLoginPage,
-    ContactCardPage
+    ContactCardPage,
+
+    PopoverComponent
   ],
   providers: [
     FeedService,
@@ -486,7 +510,8 @@ import { JsonLoadFinder } from '../pages/tab2/JsonLoadFinder';
     EmailComposer,
     //MM 3-29-18 Implementing as global Provider
     RestService,
-    LocalNotifications,
+    LocalNotifications
+
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
